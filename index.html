@@ -989,7 +989,7 @@
      4. Каталог: разделы и товары
      Чтобы добавить товар, допишите строку в ITEMS:
        c — раздел (id из CATS), f — имя файла в photos/ без .jpg,
-       w, h — размеры фото в пикселях, t — название, d — короткое описание,
+       w, h — размеры фото в пикселях, t — название,
        b — бренд (необязательно), p — цена (необязательно): число в рублях → «23 320 ₽»,
        o — прежняя цена числом (необязательно): покажется зачёркнутой рядом с p, с процентом;
        p — готовая строка (выводится как есть) или список для комплекта:
@@ -1006,45 +1006,45 @@
 
   var ITEMS = [
     /* Костюмы */
-    { c: 'suits', f: 'suit-green',          w: 710,  h: 937,  t: 'Костюм-тройка зелёный',             d: 'Пиджак, жилет и брюки' },
-    { c: 'suits', f: 'suit-brown-collage',  w: 945,  h: 1500, t: 'Костюм-тройка коричневый',          d: 'Тёплый коричневый тон, галстук в цвет', b: 'BARKLAND', p: 23320 },
-    { c: 'suits', f: 'suit-brown-mannequin',w: 876,  h: 1500, t: 'Костюм-тройка шоколадный',          d: 'Жилет, галстук с узором, крупный план ткани', b: 'PİSERRO', p: 25700 },
-    { c: 'suits', f: 'suit-pinstripe',      w: 787,  h: 1500, t: 'Костюм двубортный в полоску',       d: 'Тёмно-синий, тонкая светлая полоска', b: 'BARKLAND', p: 24900 },
-    { c: 'suits', f: 'suit-brown-wide',     w: 681,  h: 1500, t: 'Костюм коричневый свободного кроя', d: 'Широкие брюки со складками', b: 'BARKLAND', p: 22390 },
-    { c: 'suits', f: 'suit-dark-glasses',   w: 868,  h: 1500, t: 'Костюм тёмно-зелёный',              d: 'Острые лацканы, глубокий тёмный цвет', b: 'ROYAL SPIRIT', p: 25700 },
-    { c: 'suits', f: 'suit-black',          w: 874,  h: 1500, t: 'Костюм чёрный',                     d: 'С чёрной рубашкой и платком в нагрудном кармане', b: 'BARKLAND', p: 21700 },
-    { c: 'suits', f: 'suit-navy-istvud',    w: 403,  h: 1088, t: 'Костюм «Иствуд» тёмно-синий',       d: 'Линия Classic, Slim Fit, ткань с микроузором', b: 'BARKLAND', p: 21360 },
+    { c: 'suits', f: 'suit-green',          w: 710,  h: 937,  t: 'Костюм-тройка зелёный' },
+    { c: 'suits', f: 'suit-brown-collage',  w: 945,  h: 1500, t: 'Костюм-тройка коричневый', b: 'BARKLAND', p: 23320 },
+    { c: 'suits', f: 'suit-brown-mannequin',w: 876,  h: 1500, t: 'Костюм-тройка шоколадный', b: 'PİSERRO', p: 25700 },
+    { c: 'suits', f: 'suit-pinstripe',      w: 787,  h: 1500, t: 'Костюм двубортный в полоску', b: 'BARKLAND', p: 24900 },
+    { c: 'suits', f: 'suit-brown-wide',     w: 681,  h: 1500, t: 'Костюм коричневый свободного кроя', b: 'BARKLAND', p: 22390 },
+    { c: 'suits', f: 'suit-dark-glasses',   w: 868,  h: 1500, t: 'Костюм тёмно-зелёный', b: 'ROYAL SPIRIT', p: 25700 },
+    { c: 'suits', f: 'suit-black',          w: 874,  h: 1500, t: 'Костюм чёрный', b: 'BARKLAND', p: 21700 },
+    { c: 'suits', f: 'suit-navy-istvud',    w: 403,  h: 1088, t: 'Костюм «Иствуд» тёмно-синий', b: 'BARKLAND', p: 21360 },
     /* Пиджаки */
-    { c: 'blazers', f: 'suit-blazer',       w: 540,  h: 976,  t: 'Пиджак тёмно-синий',                d: 'С водолазкой и джинсами' },
-    { c: 'blazers', f: 'blazer-tweed',      w: 899,  h: 1280, t: 'Пиджак коричневый фактурный',       d: 'Накладные карманы, с бежевыми брюками', b: 'PİSERRO', p: 15950 },
-    { c: 'blazers', f: 'blazer-check',      w: 844,  h: 1500, t: 'Пиджак в клетку',                   d: 'Тёмно-синий в крупную клетку, белая рубашка', b: 'ROYAL SPIRIT', p: 15900 },
-    { c: 'blazers', f: 'blazer-navy',       w: 1153, h: 1500, t: 'Пиджак «Димаро»',                   d: 'Тёмно-синий, с платком в нагрудном кармане', b: 'BARKLAND', p: 15790 },
-    { c: 'blazers', f: 'blazer-melange',     w: 848,  h: 1500, t: 'Пиджак серо-синий фактурный',       d: 'Меланжевая ткань, с белой рубашкой', b: 'ROYAL SPIRIT', o: 14600, p: 11680 },
-    { c: 'blazers', f: 'blazer-motto',      w: 957,  h: 1257, t: 'Пиджак «Motto»',                    d: 'Линия Classic, Regular Fit, крупная клетка, размеры 52–64', b: 'BARKLAND', p: 16480 },
+    { c: 'blazers', f: 'suit-blazer',       w: 540,  h: 976,  t: 'Пиджак тёмно-синий' },
+    { c: 'blazers', f: 'blazer-tweed',      w: 899,  h: 1280, t: 'Пиджак коричневый фактурный', b: 'PİSERRO', p: 15950 },
+    { c: 'blazers', f: 'blazer-check',      w: 844,  h: 1500, t: 'Пиджак в клетку', b: 'ROYAL SPIRIT', p: 15900 },
+    { c: 'blazers', f: 'blazer-navy',       w: 1153, h: 1500, t: 'Пиджак «Димаро»', b: 'BARKLAND', p: 15790 },
+    { c: 'blazers', f: 'blazer-melange',     w: 848,  h: 1500, t: 'Пиджак серо-синий фактурный', b: 'ROYAL SPIRIT', o: 14600, p: 11680 },
+    { c: 'blazers', f: 'blazer-motto',      w: 957,  h: 1257, t: 'Пиджак «Motto»', b: 'BARKLAND', p: 16480 },
     /* Верхняя одежда */
-    { c: 'outerwear', f: 'jacket-puffer',   w: 944,  h: 1500, t: 'Пуховик с капюшоном',               d: 'Капюшон, карманы на молнии', b: 'PİSERRO', p: 24780 },
-    { c: 'outerwear', f: 'jacket-parka',    w: 720,  h: 1280, t: 'Парка с капюшоном',                 d: 'Тёмная, с высоким воротом', b: 'ROYAL SPIRIT', p: 24500 },
-    { c: 'outerwear', f: 'jacket-black-street', w: 844, h: 1500, t: 'Куртка утеплённая',             d: 'Тёмно-синяя, с капюшоном', b: 'ROYAL SPIRIT', p: 18900 },
-    { c: 'outerwear', f: 'coat-black',      w: 896,  h: 1496, t: 'Пальто чёрное',                     d: 'Прямой силуэт, под водолазку', b: 'BARKLAND', p: 25900 },
-    { c: 'outerwear', f: 'coat-check',      w: 999,  h: 1500, t: 'Пальто «Чекпойнт»',                 d: 'Тёмно-синее в клетку, с мятной рубашкой', b: 'BARKLAND', p: 26590 },
-    { c: 'outerwear', f: 'coat-charles',    w: 1084, h: 1500, t: 'Плащ «Шарль»',                      d: 'Тёмно-синий, с высоким воротом', b: 'BARKLAND', o: 20900, p: 10450 },
-    { c: 'outerwear', f: 'coat-grey-hood',   w: 1153, h: 1500, t: 'Пальто серое с капюшоном',          d: 'Графитовая фактурная ткань', b: 'BARKLAND', o: 20900, p: 10450 },
+    { c: 'outerwear', f: 'jacket-puffer',   w: 944,  h: 1500, t: 'Пуховик с капюшоном', b: 'PİSERRO', p: 24780 },
+    { c: 'outerwear', f: 'jacket-parka',    w: 720,  h: 1280, t: 'Парка с капюшоном', b: 'ROYAL SPIRIT', p: 24500 },
+    { c: 'outerwear', f: 'jacket-black-street', w: 844, h: 1500, t: 'Куртка утеплённая', b: 'ROYAL SPIRIT', p: 18900 },
+    { c: 'outerwear', f: 'coat-black',      w: 896,  h: 1496, t: 'Пальто чёрное', b: 'BARKLAND', p: 25900 },
+    { c: 'outerwear', f: 'coat-check',      w: 999,  h: 1500, t: 'Пальто «Чекпойнт»', b: 'BARKLAND', p: 26590 },
+    { c: 'outerwear', f: 'coat-charles',    w: 1084, h: 1500, t: 'Плащ «Шарль»', b: 'BARKLAND', o: 20900, p: 10450 },
+    { c: 'outerwear', f: 'coat-grey-hood',   w: 1153, h: 1500, t: 'Пальто серое с капюшоном', b: 'BARKLAND', o: 20900, p: 10450 },
     /* Рубашки */
-    { c: 'shirts', f: 'reveal',             w: 720,  h: 1237, t: 'Рубашка синяя',                     d: 'Длинный рукав, с коричневыми брюками' },
-    { c: 'shirts', f: 'hero',               w: 853,  h: 1280, t: 'Рубашка с коротким рукавом',        d: 'Светло-голубая, с коричневыми брюками' },
-    { c: 'shirts', f: 'shirt-blue-tie',     w: 1000, h: 1500, t: 'Рубашка голубая',                   d: 'Длинный рукав, с галстуком в полоску', b: 'VESTER', p: 6290 },
-    { c: 'shirts', f: 'shirt-brown',        w: 1000, h: 1500, t: 'Рубашка коричневая',                d: 'Длинный рукав, с чёрными брюками', b: 'VESTER', p: 6290 },
-    { c: 'shirts', f: 'shirt-vester-white', w: 1003, h: 1500, t: 'Рубашка белая',                     d: 'Длинный рукав, с коричневым ремнём', b: 'VESTER', p: 6290 },
-    { c: 'shirts', f: 'shirt-vester-burgundy', w: 1024, h: 1280, t: 'Рубашка тёмно-бордовая',          d: 'Длинный рукав, с бордовым ремнём', b: 'VESTER', p: 6290 },
+    { c: 'shirts', f: 'reveal',             w: 720,  h: 1237, t: 'Рубашка синяя' },
+    { c: 'shirts', f: 'hero',               w: 853,  h: 1280, t: 'Рубашка с коротким рукавом' },
+    { c: 'shirts', f: 'shirt-blue-tie',     w: 1000, h: 1500, t: 'Рубашка голубая', b: 'VESTER', p: 6290 },
+    { c: 'shirts', f: 'shirt-brown',        w: 1000, h: 1500, t: 'Рубашка коричневая', b: 'VESTER', p: 6290 },
+    { c: 'shirts', f: 'shirt-vester-white', w: 1003, h: 1500, t: 'Рубашка белая', b: 'VESTER', p: 6290 },
+    { c: 'shirts', f: 'shirt-vester-burgundy', w: 1024, h: 1280, t: 'Рубашка тёмно-бордовая', b: 'VESTER', p: 6290 },
     /* На каждый день */
-    { c: 'casual', f: 'polo-linen',         w: 956,  h: 1271, t: 'Поло и льняные брюки',              d: 'Белое поло, светлый лён' },
-    { c: 'casual', f: 'set-hooded',         w: 853,  h: 1500, t: 'Комплект с капюшоном',              d: 'Чёрный пиджак с капюшоном и брюки на кулиске', b: 'ROYAL SPIRIT', p: [['Пиджак', 16830], ['Брюки', 6790]] },
-    { c: 'casual', f: 'jumper-navy',        w: 855,  h: 1500, t: 'Джемпер на молнии тёмно-синий',     d: 'Воротник-стойка на молнии, с тёмными брюками', b: 'BARKLAND', p: 7390 },
-    { c: 'casual', f: 'jumper-cappuccino',  w: 957,  h: 1257, t: 'Джемпер «Снейк-2» капучино',        d: 'Линия Smart Casual, круглый вырез, Slim Fit', b: 'BARKLAND', p: 7390 },
-    { c: 'casual', f: 'tshirt-blue',       w: 668,  h: 889,  t: 'Футболка синяя',                    d: 'Круглый вырез, с чёрными брюками', b: 'BARKLAND', p: 2990 },
+    { c: 'casual', f: 'polo-linen',         w: 956,  h: 1271, t: 'Поло и льняные брюки' },
+    { c: 'casual', f: 'set-hooded',         w: 853,  h: 1500, t: 'Комплект с капюшоном', b: 'ROYAL SPIRIT', p: [['Пиджак', 16830], ['Брюки', 6790]] },
+    { c: 'casual', f: 'jumper-navy',        w: 855,  h: 1500, t: 'Джемпер на молнии тёмно-синий', b: 'BARKLAND', p: 7390 },
+    { c: 'casual', f: 'jumper-cappuccino',  w: 957,  h: 1257, t: 'Джемпер «Снейк-2» капучино', b: 'BARKLAND', p: 7390 },
+    { c: 'casual', f: 'tshirt-blue',       w: 668,  h: 889,  t: 'Футболка синяя', b: 'BARKLAND', p: 2990 },
     /* Аксессуары */
-    { c: 'accessories', f: 'tie-burgundy',    w: 1125, h: 1270, t: 'Галстук бордовый',                  d: 'Однотонный, с мягким блеском', p: 1590 },
-    { c: 'accessories', f: 'tie-brown',       w: 1125, h: 1270, t: 'Галстук коричневый',                d: 'Однотонный, с мягким блеском', p: 1590 }
+    { c: 'accessories', f: 'tie-burgundy',    w: 1125, h: 1270, t: 'Галстук бордовый', p: 1590 },
+    { c: 'accessories', f: 'tie-brown',       w: 1125, h: 1270, t: 'Галстук коричневый', p: 1590 }
   ];
 
   function plural(n) {
@@ -1150,7 +1150,7 @@
     var n = colCount(), cols = [], heights = [], k;
     for (k = 0; k < n; k++) { cols.push([]); heights.push(0); }
     /* запас под подпись (в долях ширины колонки); строки бренда и цены добавляют своё */
-    var capAllowance = n === 2 ? 0.3 : 0.18;
+    var capAllowance = n === 2 ? 0.2 : 0.11;
     var brandExtra = n === 2 ? 0.1 : 0.06, priceExtra = n === 2 ? 0.14 : 0.1, rowExtra = n === 2 ? 0.1 : 0.07;
     currentItems.forEach(function (it, i) {
       var m = 0;
